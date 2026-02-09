@@ -1,4 +1,4 @@
-# LaravelDev2026 Portfolio
+# EpicDev2026 Portfolio
 
 Professional portfolio website for independent Laravel and PHP development services.
 
@@ -54,33 +54,6 @@ This is a modern, responsive portfolio website showcasing web development servic
 - Contact cards with prominent CTAs
 - Responsive mobile menu
 
-## 🚦 Getting Started
-
-### Local Development
-
-1. Clone the repository:
-```bash
-git clone https://github.com/LaravelDev2026/LaravelDev2026.github.io.git
-```
-
-2. Open `index.html` in your browser:
-```bash
-# Using Python's built-in server
-python -m http.server 8000
-
-# Or using PHP
-php -S localhost:8000
-```
-
-3. Navigate to `http://localhost:8000`
-
-### Deployment to GitHub Pages
-
-1. Push to the `main` or `gh-pages` branch
-2. Enable GitHub Pages in repository settings
-3. Select the branch and root directory
-4. Site will be live at `https://laraveldev2026.github.io`
-
 ## 📱 Browser Support
 
 - Chrome (latest)
@@ -130,18 +103,7 @@ Update navigation links in both:
 ## 📞 Contact
 
 - **Email**: laraveldev2026@outlook.com
-- **GitHub**: [@LaravelDev2026](https://github.com/LaravelDev2026)
-
-## 📄 License
-
-This project is open source and available for use. Feel free to fork and customize for your own portfolio.
-
-## 🤝 Contributing
-
-This is a personal portfolio project, but suggestions and feedback are welcome! Feel free to:
-- Open an issue for bugs or suggestions
-- Fork the project for your own use
-- Share feedback on design or UX
+- **GitHub**: [@EpicDev2026](https://github.com/EpicDev2026)
 
 ## 🔄 Updates
 
@@ -152,4 +114,4 @@ This is a personal portfolio project, but suggestions and feedback are welcome! 
 
 ---
 
-Built with ❤️ by LaravelDev2026
+Built with ❤️ by EpicDev2026
