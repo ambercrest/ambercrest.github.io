@@ -66,5 +66,30 @@ const observer = new IntersectionObserver(entries => {
 });
 
 // Observe all animated elements
-document.querySelectorAll('.service-card, .approach-card, .tech-category, .contact-card')
+document.querySelectorAll('.approach-card, .tech-category, .contact-card')
   .forEach(el => observer.observe(el));
+
+// ================================
+// SERVICES ACCORDION
+// ================================
+document.querySelectorAll('.service-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.service-item');
+    const body = item.querySelector('.service-body');
+    const isOpen = !body.hidden;
+
+    // Close all open items first
+    document.querySelectorAll('.service-item').forEach(i => {
+      i.querySelector('.service-body').hidden = true;
+      i.querySelector('.service-toggle').setAttribute('aria-expanded', 'false');
+      i.classList.remove('is-open');
+    });
+
+    // If it wasn't open, open it now
+    if (!isOpen) {
+      body.hidden = false;
+      btn.setAttribute('aria-expanded', 'true');
+      item.classList.add('is-open');
+    }
+  });
+});
