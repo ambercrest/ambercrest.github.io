@@ -1,6 +1,6 @@
 /**
  * AmberCrest Portfolio — script.js
- * Handles: mobile nav, smooth scroll, navbar scroll effect, fade-in animations
+ * Handles: mobile nav, smooth scroll, navbar scroll effect, fade-in animations, accordion
  */
 
 // ================================
@@ -26,14 +26,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
     e.preventDefault();
 
-    const target  = document.querySelector(href);
-    const navbar  = document.querySelector('#navbar');
-    const navH    = navbar ? navbar.offsetHeight : 0;
+    const target = document.querySelector(href);
+    const navbar = document.querySelector('#navbar');
+    const navH   = navbar ? navbar.offsetHeight : 0;
 
     if (target) {
       window.scrollTo({ top: target.offsetTop - navH, behavior: 'smooth' });
-
-      // Close mobile menu after navigating
       navMenu?.classList.remove('active');
       mobileToggle?.classList.remove('active');
     }
@@ -57,7 +55,7 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('fade-in');
-      observer.unobserve(entry.target); // only animate once
+      observer.unobserve(entry.target);
     }
   });
 }, {
@@ -65,31 +63,39 @@ const observer = new IntersectionObserver(entries => {
   rootMargin: '0px 0px -50px 0px'
 });
 
-// Observe all animated elements
 document.querySelectorAll('.approach-card, .tech-category, .contact-card')
   .forEach(el => observer.observe(el));
 
 // ================================
 // SERVICES ACCORDION
 // ================================
-document.querySelectorAll('.service-toggle').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const item = btn.closest('.service-item');
+
+// Wait for DOM to be fully ready before wiring up accordion
+document.addEventListener('DOMContentLoaded', () => {
+  const serviceItems = document.querySelectorAll('.service-item');
+
+  serviceItems.forEach(item => {
+    const btn  = item.querySelector('.service-toggle');
     const body = item.querySelector('.service-body');
-    const isOpen = item.classList.contains('is-open');
 
-    // Close all open items first
-    document.querySelectorAll('.service-item').forEach(i => {
-      i.querySelector('.service-body').setAttribute('hidden', '');
-      i.querySelector('.service-toggle').setAttribute('aria-expanded', 'false');
-      i.classList.remove('is-open');
+    if (!btn || !body) return;
+
+    btn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('is-open');
+
+      // Close all panels
+      serviceItems.forEach(i => {
+        i.classList.remove('is-open');
+        i.querySelector('.service-toggle').setAttribute('aria-expanded', 'false');
+        i.querySelector('.service-body').setAttribute('hidden', '');
+      });
+
+      // If this one was closed, open it
+      if (!isOpen) {
+        item.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+        body.removeAttribute('hidden');
+      }
     });
-
-    // If it wasn't already open, open it now
-    if (!isOpen) {
-      body.removeAttribute('hidden');
-      btn.setAttribute('aria-expanded', 'true');
-      item.classList.add('is-open');
-    }
   });
 });
