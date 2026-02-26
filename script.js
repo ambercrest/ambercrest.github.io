@@ -1,6 +1,6 @@
 /**
- * AmberCrest Portfolio — script.js
- * Handles: mobile nav, smooth scroll, navbar scroll effect, fade-in animations, accordion
+ * AmberCrest Services — script.js
+ * Handles: mobile nav, navbar scroll effect, FAQ accordion
  */
 
 // ================================
@@ -17,85 +17,45 @@ if (mobileToggle && navMenu) {
 }
 
 // ================================
-// SMOOTH SCROLLING (anchor links)
+// CLOSE MOBILE MENU ON LINK CLICK
 // ================================
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', e => {
-    const href = anchor.getAttribute('href');
-    if (href === '#') return;
-
-    e.preventDefault();
-
-    const target = document.querySelector(href);
-    const navbar = document.querySelector('#navbar');
-    const navH   = navbar ? navbar.offsetHeight : 0;
-
-    if (target) {
-      window.scrollTo({ top: target.offsetTop - navH, behavior: 'smooth' });
-      navMenu?.classList.remove('active');
+if (navMenu) {
+  navMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
       mobileToggle?.classList.remove('active');
-    }
+    });
   });
-});
+}
 
 // ================================
-// NAVBAR — add shadow on scroll
+// NAVBAR SCROLL EFFECT
 // ================================
 const navbar = document.querySelector('#navbar');
-
 window.addEventListener('scroll', () => {
   if (!navbar) return;
   navbar.classList.toggle('scrolled', window.pageYOffset > 50);
 }, { passive: true });
 
 // ================================
-// INTERSECTION OBSERVER — fade-in cards
+// FAQ ACCORDION
 // ================================
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('fade-in');
-      observer.unobserve(entry.target);
-    }
-  });
-}, {
-  threshold:  0.1,
-  rootMargin: '0px 0px -50px 0px'
-});
-
-document.querySelectorAll('.approach-card, .tech-category, .contact-card')
-  .forEach(el => observer.observe(el));
-
-// ================================
-// SERVICES ACCORDION
-// ================================
-
-// Wait for DOM to be fully ready before wiring up accordion
 document.addEventListener('DOMContentLoaded', () => {
-  const serviceItems = document.querySelectorAll('.service-item');
+  const faqToggles = document.querySelectorAll('.faq-toggle');
 
-  serviceItems.forEach(item => {
-    const btn  = item.querySelector('.service-toggle');
-    const body = item.querySelector('.service-body');
+  faqToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const faqItem = toggle.parentElement;
 
-    if (!btn || !body) return;
-
-    btn.addEventListener('click', () => {
-      const isOpen = item.classList.contains('is-open');
-
-      // Close all panels
-      serviceItems.forEach(i => {
-        i.classList.remove('is-open');
-        i.querySelector('.service-toggle').setAttribute('aria-expanded', 'false');
-        i.querySelector('.service-body').setAttribute('hidden', '');
+      // Close all other items
+      document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== faqItem) {
+          item.classList.remove('open');
+        }
       });
 
-      // If this one was closed, open it
-      if (!isOpen) {
-        item.classList.add('is-open');
-        btn.setAttribute('aria-expanded', 'true');
-        body.removeAttribute('hidden');
-      }
+      // Toggle current item
+      faqItem.classList.toggle('open');
     });
   });
 });
