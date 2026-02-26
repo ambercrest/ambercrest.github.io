@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FAQ — Common questions about working with AmberCrest for Laravel development.">
+  <title>FAQ — AmberCrest</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <i class="fas fa-fire"></i>
+        <span>AmberCrest</span>
+      </a>
+      <button class="mobile-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero hero-small">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Frequently Asked Questions</h1>
+        <p>Answers to common questions about working together</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ACCORDION ===================== -->
+  <section class="faq-section">
+    <div class="container">
+
+      <div class="faq-category">
+        <h2>Getting Started</h2>
+        
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>How do I get started working with you?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Simple. Reach out via email or the contact form. Tell me what you need—bug fixes, features, code review, or retainer support. We'll discuss scope, timeline, and rates. If it's a good fit, we start.</p>
+            <p>No long contracts. No sales calls. Just straightforward communication about what you need and what I can deliver.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>What information should I provide when reaching out?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>To give you a quick, accurate response, include:</p>
+            <ul class="faq-list">
+              <li>Brief description of your project or issue</li>
+              <li>The tech stack you're using</li>
+              <li>Timeline expectations</li>
+              <li>Rough budget or rate preference</li>
+              <li>Your preferred communication method</li>
+            </ul>
+            <p>But honestly, even just "I have a Laravel bug that needs fixing" is enough to get started.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>Do you work with existing code or only greenfield projects?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Both. I'm comfortable jumping into existing codebases and working within your standards. Legacy code? No problem. I've handled plenty of it.</p>
+            <p>I also build from scratch if that's what you need. Happy either way.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h2>How I Work</h2>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>What's your response time?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p><strong>Standard:</strong> 24 hours. You'll hear back within a day.</p>
+            <p><strong>Retainer (Professional+):</strong> 12 hours priority response.</p>
+            <p><strong>Retainer (Enterprise):</strong> 6 hours priority response.</p>
+            <p>Critical production bugs? I'll respond sooner if I'm available.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>Do I need to attend meetings with you?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>No required meetings. I prefer async communication—email, GitHub comments, Slack updates. This keeps things efficient.</p>
+            <p>That said, if you want to kick off a project with a quick call to align on expectations, I'm happy to do that. But it's optional.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>How do you handle project communication?</span>
+            <i class="fars fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Async-first. Email by default. Slack if you prefer. GitHub for code discussion and commits.</p>
+            <p>You'll get regular updates—status reports, what's done, what's next. No surprises. No radio silence.</p>
+            <p>I document my work clearly so your team knows exactly what I did and why.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>What's your process for bug fixes?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>I don't just patch symptoms. Here's how I approach bugs:</p>
+            <ul class="faq-list">
+              <li><strong>Diagnose:</strong> Reproduce the issue, understand the root cause</li>
+              <li><strong>Fix:</strong> Clean, permanent solution—not a hack</li>
+              <li><strong>Test:</strong> Verify the fix works, check for regressions</li>
+              <li><strong>Document:</strong> Clear commit message explaining what & why</li>
+              <li><strong>Deliver:</strong> Push to your repo, stand by for questions</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>Can you work with my team's Git workflow?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. I adapt to your process. Feature branches, pull requests, code reviews—whatever your team does, I'll work within it.</p>
+            <p>Clean commits, meaningful messages, proper branch naming. No friction.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h2>Code & Quality</h2>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>What's your coding standard?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Clean, maintainable code that follows Laravel best practices:</p>
+            <ul class="faq-list">
+              <li>PSR-12 coding standard</li>
+              <li>Meaningful variable & function names</li>
+              <li>DRY principle—no duplication</li>
+              <li>Proper error handling</li>
+              <li>Comments where logic isn't obvious</li>
+              <li>No technical debt introduced</li>
+            </ul>
+            <p>Every line is written with the next developer in mind.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>Do you write tests?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, if your project has tests. I'll follow your existing test patterns and add tests for any new code.</p>
+            <p>If your project doesn't have tests, we can discuss whether to add them. Sometimes the priority is getting the feature shipped quickly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>What about code review quality?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>I do thorough code reviews. I look at:</p>
+            <ul class="faq-list">
+              <li>Code quality & readability</li>
+              <li>Security vulnerabilities</li>
+              <li>Performance issues</li>
+              <li>Architecture decisions</li>
+              <li>Testing coverage</li>
+              <li>Database efficiency</li>
+              <li>Potential tech debt</li>
+            </ul>
+            <p>I provide actionable feedback with explanations, not just criticism.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>Can you handle database optimization?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Query optimization, indexing, schema improvements—all part of my expertise.</p>
+            <p>I profile queries, identify bottlenecks, and optimize for performance. Database work is one of my specialties.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h2>Scope & Limitations</h2>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>What types of Laravel projects can you handle?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Pretty much any Laravel project. APIs, web apps, SaaS platforms, admin dashboards, social features, payment integrations, etc.</p>
+            <p>If it's built in Laravel, I can likely help. If it's not, we can discuss alternatives.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>What if I need frontend work?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>I can do HTML, CSS, JavaScript, Bootstrap, and basic Blade template work. I'm not a designer, but I can build functional, responsive interfaces.</p>
+            <p>For complex frontend frameworks (React, Vue), I have experience with those too—particularly as they integrate with Laravel (Inertia, etc.).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>Do you do infrastructure/DevOps work?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Not my speciality. I can help with deployment, basic server setup, and Laravel-specific hosting issues, but serious DevOps work isn't my focus.</p>
+            <p>If you need that, I'll point you to someone who specializes in it.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>Can you sign NDAs?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. No problem. Send it over and I'll review it. Standard business confidentiality stuff is normal.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h2>Pricing & Engagement</h2>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>Can you work on an hourly basis without a retainer?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. $60/hour for one-off work. $50/hour if you commit to a 3-month engagement.</p>
+            <p>Flexible. No minimum hours required for standard hourly work.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>What's your retainer commitment?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>3-month minimum. Month-to-month after that. Cancel anytime with 2 weeks notice.</p>
+            <p>I'm a real person, not a company, so commitment goes both ways. If it's not working, we move on.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>How do you handle retainer hours that go unused?</span>
+            <i class="fars fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Unused hours roll over for Professional+ plans. They expire after 60 days if not used.</p>
+            <p>If you have a quiet month but know you'll be busy next month, just let me know and we'll plan accordingly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>What's your payment method?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Invoice via email. I accept bank transfer, PayPal, and card payments.</p>
+            <p>For retainers, invoiced monthly at the start. For hourly work, invoiced on completion. Flexible payment terms available.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-toggle">
+            <span>Do you offer package discounts?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Extended partnerships (6+ months) get additional discounts beyond the standard rates.</p>
+            <p>The longer we work together, the better the rate. Let's discuss your needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-category">
+        <h2>Not Seeing Your Question?</h2>
+        
+        <div class="faq-item open">
+          <button class="faq-toggle">
+            <span>How do I ask something else?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Easy. <a href="contact.html">Get in touch</a>. Ask away. I'm happy to answer any question about how I work, what I can help with, or how we can collaborate.</p>
+            <p>No question is too small or too weird.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Ready to Work Together?</h2>
+        <p>Still have questions? Let's talk.</p>
+        <a href="contact.html" class="btn btn-primary btn-large">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <i class="fas fa-fire"></i>
+            <span>AmberCrest</span>
+          </div>
+          <p>Laravel Overflow Developer</p>
+          <p class="footer-tagline">Feature development. Bug fixes. Code review.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="https://github.com/ambercrest" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></li>
+              <li><a href="mailto:laraveldev2026@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+              <li><a href="https://ambercrest.github.io" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Main Portfolio</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li>Laravel Development</li>
+              <li>Bug Fixes</li>
+              <li>Code Review</li>
+              <li>Monthly Retainers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>2026 AmberCrest — Laravel Overflow Specialist</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
