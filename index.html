@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AmberCrest — Senior Full Stack PHP & Laravel Developer. Clean code, fast turnaround, remote collaboration.">
-  <title>AmberCrest — Laravel & PHP Developer</title>
+  <meta name="description" content="AmberCrest — Laravel Overflow Developer. Specialist in bug fixes, feature development, and code optimization for agencies.">
+  <title>AmberCrest — Laravel Overflow Developer for Agencies</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- ===================== NAVIGATION ===================== -->
   <nav id="navbar">
     <div class="container">
-      <a href="#home" class="logo">
+      <a href="index.html" class="logo">
         <i class="fas fa-fire"></i>
         <span>AmberCrest</span>
       </a>
@@ -23,333 +23,164 @@
         <span></span>
       </button>
       <ul class="nav-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#tech">Tech Stack</a></li>
-        <li><a href="#approach">Approach</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- ===================== HERO ===================== -->
-  <section id="home" class="hero">
+  <section class="hero">
     <div class="container">
       <div class="hero-content">
         <div class="hero-badge">
-          <i class="fas fa-laptop-code"></i>
-          Senior Full Stack Developer — Available for Remote Work
+          <i class="fas fa-plug"></i>
+          Overflow Support for Laravel Agencies
         </div>
-        <h1>Laravel & PHP Development<br>Built Right, Delivered Fast</h1>
-        <p class="hero-lead">I handle Laravel overflow for agencies. Clean code, fast turnaround, reliable.</p>
-        <div class="hero-stats">
-          <div class="stat"><i class="fas fa-clock"></i><span>Fast Response</span></div>
-          <div class="stat"><i class="fas fa-code-branch"></i><span>Clean Commits</span></div>
-          <div class="stat"><i class="fas fa-search"></i><span>Attention to Detail</span></div>
-          <div class="stat"><i class="fas fa-globe"></i><span>Remote Ready</span></div>
-        </div>
+        <h1>Handle Your Overflow.<br>Focus on Growth.</h1>
+        <p class="hero-lead">Laravel developer specializing in feature development, bug fixes, and code review. Available immediately for overflow projects.</p>
         <div class="hero-cta">
-          <a href="#contact" class="btn btn-primary">Start a Project</a>
-          <a href="#services" class="btn btn-outline">View Services</a>
+          <a href="services.html" class="btn btn-primary">View Services</a>
+          <a href="contact.html" class="btn btn-outline">Get in Touch</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== SERVICES ===================== -->
-  <section id="services" class="services-section">
+  <!-- ===================== WHAT I OFFER ===================== -->
+  <section class="offerings">
     <div class="container">
       <div class="section-header">
-        <h2>What I Do</h2>
-        <p>Agencies hire me for overflow work — features, bug fixes, refactoring. Laravel, PHP, or legacy code.</p>
+        <h2>What I Offer</h2>
+        <p>Specialized support for agencies juggling multiple projects</p>
       </div>
-      
-      <div class="services-accordion">
 
-        <!-- Service: Laravel Development -->
-        <div class="service-item">
-          <button class="service-toggle" aria-expanded="false">
-            <div class="service-toggle-left">
-              <div class="service-icon-sm"><i class="fas fa-code-branch"></i></div>
-              <span>Feature Development & Bug Fixes</span>
-            </div>
-            <i class="fas fa-chevron-down service-chevron"></i>
-          </button>
-          <div class="service-body" hidden>
-            <p>I specialize in what agencies need most: quick turnaround on new features and critical bug fixes. I slot into your workflow, understand your code, and deliver clean commits.</p>
-            <ul class="service-features">
-              <li>Custom feature development</li>
-              <li>Critical bug resolution</li>
-              <li>Code review & optimization</li>
-              <li>Taking overflow work off your plate</li>
-              <li>Integration with existing projects</li>
-            </ul>
+      <div class="offerings-grid">
+
+        <div class="offering-card">
+          <div class="offering-icon">
+            <i class="fas fa-bug"></i>
           </div>
-        </div>
-        
-        <!-- Service: Bug Fixes -->
-        <div class="service-item">
-          <button class="service-toggle" aria-expanded="false">
-            <div class="service-toggle-left">
-              <div class="service-icon-sm"><i class="fas fa-bug"></i></div>
-              <span>Bug Fixes & Debugging</span>
-            </div>
-            <i class="fas fa-chevron-down service-chevron"></i>
-          </button>
-          <div class="service-body" hidden>
-            <p>Fast, thorough debugging across Laravel, PHP, and JavaScript. I track down root causes rather than patching symptoms — fixes that hold.</p>
-            <ul class="service-features">
-              <li>Critical bug resolution</li>
-              <li>Database query debugging</li>
-              <li>JavaScript and jQuery fixes</li>
-              <li>Error tracking and logging</li>
-              <li>Performance bottleneck analysis</li>
-            </ul>
-          </div>
+          <h3>Bug Fixes & Debugging</h3>
+          <p>Critical issues resolved fast. Root cause analysis. Code that holds.</p>
+          <a href="services.html#bug-fixes" class="card-link">Learn more →</a>
         </div>
 
-        <!-- Service: Legacy PHP -->
-        <div class="service-item">
-          <button class="service-toggle" aria-expanded="false">
-            <div class="service-toggle-left">
-              <div class="service-icon-sm"><i class="fas fa-code"></i></div>
-              <span>Legacy PHP Modernization</span>
-            </div>
-            <i class="fas fa-chevron-down service-chevron"></i>
-          </button>
-          <div class="service-body" hidden>
-            <p>Transform old, brittle PHP into clean, maintainable code. I assess structure, introduce type safety, and document as I go — leaving the codebase better than I found it.</p>
-            <ul class="service-features">
-              <li>PHP version upgrades</li>
-              <li>MVC restructuring</li>
-              <li>Security hardening</li>
-              <li>Inline documentation</li>
-              <li>Dependency management with Composer</li>
-            </ul>
+        <div class="offering-card">
+          <div class="offering-icon">
+            <i class="fas fa-code-branch"></i>
           </div>
+          <h3>Feature Development</h3>
+          <p>New features built clean. Seamless integration. Your timeline respected.</p>
+          <a href="services.html#features" class="card-link">Learn more →</a>
         </div>
 
-        <!-- Service: Frontend -->
-        <div class="service-item">
-          <button class="service-toggle" aria-expanded="false">
-            <div class="service-toggle-left">
-              <div class="service-icon-sm"><i class="fas fa-laptop-code"></i></div>
-              <span>Frontend Development</span>
-            </div>
-            <i class="fas fa-chevron-down service-chevron"></i>
-          </button>
-          <div class="service-body" hidden>
-            <p>Responsive, accessible, and well-structured front ends. Comfortable across the stack — from layout to interactivity — with a sharp eye for detail and UX.</p>
-            <ul class="service-features">
-              <li>Responsive layouts with Bootstrap</li>
-              <li>Vanilla JS and jQuery</li>
-              <li>Custom CSS and animations</li>
-              <li>Form validation (client & server)</li>
-              <li>Cross-browser compatibility</li>
-            </ul>
+        <div class="offering-card">
+          <div class="offering-icon">
+            <i class="fas fa-magnifying-glass"></i>
           </div>
+          <h3>Code Review & Optimization</h3>
+          <p>Improve code quality. Spot issues early. Performance tuning.</p>
+          <a href="services.html#code-review" class="card-link">Learn more →</a>
         </div>
 
-        <!-- Service: Database -->
-        <div class="service-item">
-          <button class="service-toggle" aria-expanded="false">
-            <div class="service-toggle-left">
-              <div class="service-icon-sm"><i class="fas fa-database"></i></div>
-              <span>Database Work</span>
-            </div>
-            <i class="fas fa-chevron-down service-chevron"></i>
-          </button>
-          <div class="service-body" hidden>
-            <p>Query optimization, schema improvements, and data integrity fixes for MySQL and MariaDB. I approach database work methodically — profiling first, optimizing with intent.</p>
-            <ul class="service-features">
-              <li>Query optimization and indexing</li>
-              <li>Schema design and improvements</li>
-              <li>Data validation and integrity</li>
-              <li>Laravel migration management</li>
-              <li>Performance profiling</li>
-            </ul>
+        <div class="offering-card">
+          <div class="offering-icon">
+            <i class="fas fa-handshake"></i>
           </div>
+          <h3>Monthly Retainer</h3>
+          <p>Predictable support. Dedicated hours. Your dedicated overflow resource.</p>
+          <a href="pricing.html#retainer" class="card-link">Learn more →</a>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ===================== TECH STACK ===================== -->
-  <section id="tech" class="tech-section">
+  <!-- ===================== WHY ME ===================== -->
+  <section class="why-me">
     <div class="container">
       <div class="section-header">
-        <h2>Tech Stack</h2>
-        <p>Technologies I work with daily</p>
+        <h2>Why Agencies Choose Me</h2>
+        <p>What makes overflow support actually work</p>
       </div>
-      <div class="tech-grid">
 
-        <div class="tech-category">
-          <h3><i class="fas fa-layer-group"></i> Backend</h3>
-          <div class="tech-tags">
-            <span class="tech-tag featured"><i class="fab fa-laravel"></i> Laravel</span>
-            <span class="tech-tag featured"><i class="fab fa-php"></i> PHP</span>
-            <span class="tech-tag">Eloquent ORM</span>
-            <span class="tech-tag">Artisan CLI</span>
-            <span class="tech-tag">Composer</span>
-          </div>
+      <div class="benefits-grid">
+
+        <div class="benefit">
+          <div class="benefit-number">01</div>
+          <h3>No Onboarding Overhead</h3>
+          <p>I work with what you've built. Your codebase, your standards, your process. No training needed.</p>
         </div>
 
-        <div class="tech-category">
-          <h3><i class="fas fa-paint-brush"></i> Frontend</h3>
-          <div class="tech-tags">
-            <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
-            <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
-            <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
-            <span class="tech-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
-            <span class="tech-tag">jQuery</span>
-            <span class="tech-tag">Font Awesome</span>
-          </div>
+        <div class="benefit">
+          <div class="benefit-number">02</div>
+          <h3>Fast Response Time</h3>
+          <p>You need something done? I'm here. Fast turnaround on bug fixes, quick starts on features.</p>
         </div>
 
-        <div class="tech-category">
-          <h3><i class="fas fa-database"></i> Database</h3>
-          <div class="tech-tags">
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">MariaDB</span>
-            <span class="tech-tag">HeidiSQL</span>
-            <span class="tech-tag">Query Optimization</span>
-            <span class="tech-tag">Laravel Migrations</span>
-          </div>
+        <div class="benefit">
+          <div class="benefit-number">03</div>
+          <h3>Clean Code Matters</h3>
+          <p>Every line is written with your team in mind. Clear commits, documented decisions, zero technical debt.</p>
         </div>
 
-        <div class="tech-category">
-          <h3><i class="fas fa-tools"></i> Tools & Workflow</h3>
-          <div class="tech-tags">
-            <span class="tech-tag"><i class="fab fa-git-alt"></i> Git</span>
-            <span class="tech-tag"><i class="fab fa-github"></i> GitHub</span>
-            <span class="tech-tag">PhpStorm</span>
-          </div>
+        <div class="benefit">
+          <div class="benefit-number">04</div>
+          <h3>Laravel Specialist</h3>
+          <p>I live in Laravel. Know the framework deeply. Patterns, best practices, gotchas — covered.</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-number">05</div>
+          <h3>Async-Friendly</h3>
+          <p>No unnecessary meetings. Clear communication. Status updates when you need them.</p>
+        </div>
+
+        <div class="benefit">
+          <div class="benefit-number">06</div>
+          <h3>Reliable & Available</h3>
+          <p>When you book me, I deliver. Consistent quality, predictable timelines, no excuses.</p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ===================== APPROACH ===================== -->
-  <section id="approach" class="approach-section">
+  <!-- ===================== QUICK STATS ===================== -->
+  <section class="stats">
     <div class="container">
-      <div class="section-header">
-        <h2>How I Work</h2>
-        <p>Straightforward process, consistent results</p>
-      </div>
-
-      <div class="approach-grid">
-
-        <div class="approach-card">
-          <div class="approach-number">01</div>
-          <h3>MVP First</h3>
-          <p>Every project starts with a focused, working product. Core functionality is built clean and complete before anything else — no half-finished features, no loose ends. You get something real to use from day one.</p>
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-number">5+</div>
+          <p>Years Laravel Experience</p>
         </div>
-
-        <div class="approach-card">
-          <div class="approach-number">02</div>
-          <h3>Phased Rollout</h3>
-          <p>After the MVP is solid, we iterate. New features, refined flows, and additional pages are added in planned phases — each one building on a stable foundation. No big-bang releases, no surprises.</p>
+        <div class="stat-box">
+          <div class="stat-number">50+</div>
+          <p>Projects Completed</p>
         </div>
-
-        <div class="approach-card">
-          <div class="approach-number">03</div>
-          <h3>Meticulous Code</h3>
-          <p>Every line is written with the next developer in mind. Readable structure, meaningful names, commented where it matters. Code that doesn't need explaining — but has it anyway.</p>
+        <div class="stat-box">
+          <div class="stat-number">24h</div>
+          <p>Response Time</p>
         </div>
-
-        <div class="approach-card">
-          <div class="approach-number">04</div>
-          <h3>Clear Communication</h3>
-          <p>Text-based updates by default — no unnecessary meetings. You always know what's happening, what's next, and when to expect it. Transparent and concise throughout.</p>
-        </div>
-
-        <div class="approach-card">
-          <div class="approach-number">05</div>
-          <h3>Fast Turnaround</h3>
-          <p>Quick to respond, quick to deliver. Small fixes resolved within hours. Features scoped and shipped in days. I don't sit on things — momentum matters.</p>
-        </div>
-
-        <div class="approach-card">
-          <div class="approach-number">06</div>
-          <h3>Solo or Team</h3>
-          <p>Equally comfortable working independently or slotting into an existing team. Clean commits, proper branching, and no friction — I adapt to your workflow, not the other way around.</p>
-        </div>
-
-      </div>
-
-      <!-- Rates -->
-      <div class="rates-box">
-        <div class="rates-content">
-          <h3><i class="fas fa-tag"></i> Rates & Availability</h3>
-          <div class="rates-details">
-            <div class="rate-item">
-              <i class="fas fa-clock"></i>
-              <div>
-                <strong>Hourly Rate</strong>
-                <p>$50-60/hour for agencies — competitive rates, reliable output, no learning curve</p>
-              </div>
-            </div>
-            <div class="rate-item">
-              <i class="fas fa-briefcase"></i>
-              <div>
-                <strong>Project Work</strong>
-                <p>Short-term tasks, bug fixes, feature development, and ongoing retainers welcome</p>
-              </div>
-            </div>
-            <div class="rate-item">
-              <i class="fas fa-home"></i>
-              <div>
-                <strong>Remote Only</strong>
-                <p>Fully remote setup with flexible hours and reliable, async-friendly communication</p>
-              </div>
-            </div>
-          </div>
+        <div class="stat-box">
+          <div class="stat-number">100%</div>
+          <p>Code Quality Focus</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== CONTACT ===================== -->
-  <section id="contact" class="contact-section">
+  <!-- ===================== CTA ===================== -->
+  <section class="cta-section">
     <div class="container">
-      <div class="section-header">
-        <h2>Let's Work Together</h2>
-        <p>Reach out if you need overflow support or ongoing Laravel work</p>
-      </div>
-
-      <div class="contact-grid">
-        <div class="contact-card">
-          <div class="contact-icon"><i class="fab fa-github"></i></div>
-          <h3>GitHub</h3>
-          <p>Browse my code, contributions, and public projects</p>
-          <a href="https://github.com/ambercrest" target="_blank" rel="noopener" class="contact-link">
-            github.com/ambercrest <i class="fas fa-external-link-alt"></i>
-          </a>
-        </div>
-        <div class="contact-card">
-          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-          <h3>Email</h3>
-          <p>For project enquiries and collaboration discussions</p>
-          <a href="mailto:laraveldev2026@gmail.com" class="contact-link">
-            laraveldev2026@gmail.com <i class="fas fa-paper-plane"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="contact-info-box">
-        <h3>Getting Started</h3>
-        <p>To help me give you a quick, accurate response — please include the following when reaching out:</p>
-        <ul>
-          <li><i class="fas fa-check"></i> A brief description of your project or issue</li>
-          <li><i class="fas fa-check"></i> The technology stack you're working with</li>
-          <li><i class="fas fa-check"></i> Your timeline expectations</li>
-          <li><i class="fas fa-check"></i> Budget range, if applicable</li>
-        </ul>
-        <p class="response-time">
-          <i class="fas fa-clock"></i> Typically respond within 24 hours
-        </p>
+      <div class="cta-box">
+        <h2>Ready to Get Started?</h2>
+        <p>Let's talk about your overflow needs. No pressure, no commitment.</p>
+        <a href="contact.html" class="btn btn-primary btn-large">Get in Touch</a>
       </div>
     </div>
   </section>
@@ -363,18 +194,17 @@
             <i class="fas fa-fire"></i>
             <span>AmberCrest</span>
           </div>
-          <p>Senior Full Stack PHP & Laravel Developer</p>
-          <p class="footer-tagline">Laravel overflow specialist for agencies. Always available.</p>
+          <p>Laravel Overflow Developer</p>
+          <p class="footer-tagline">Feature development. Bug fixes. Code review.</p>
         </div>
         <div class="footer-links">
           <div class="footer-col">
             <h4>Navigation</h4>
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#tech">Tech Stack</a></li>
-              <li><a href="#approach">Approach</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="faq.html">FAQ</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -382,22 +212,22 @@
             <ul>
               <li><a href="https://github.com/ambercrest" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></li>
               <li><a href="mailto:laraveldev2026@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+              <li><a href="https://ambercrest.github.io" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Main Portfolio</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Specialties</h4>
+            <h4>Services</h4>
             <ul>
               <li>Laravel Development</li>
-              <li>PHP Modernization</li>
-              <li>Bug Fixes & Debugging</li>
-              <li>Database Optimization</li>
+              <li>Bug Fixes</li>
+              <li>Code Review</li>
+              <li>Monthly Retainers</li>
             </ul>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>2026 AmberCrest — Independent Developer</p>
-        <p class="footer-availability">Available for remote projects and collaborations</p>
+        <p>2026 AmberCrest — Laravel Overflow Specialist</p>
       </div>
     </div>
   </footer>
